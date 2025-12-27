@@ -1,0 +1,10 @@
+
+An empty line follows this one.
+Case sensitivity Check.
+Final line ends here.
+Hello, this is line one.
+Last but one line.
+Lua is a lightweight scripting language.
+Special characters test: !@#$%^&*()
+This line contains numbers: 12345.
+Whitespace    test    with    tabs.
