@@ -10,7 +10,7 @@ function isplaceok(a, n, c)
 end
 
 -- print a board
-
+    
 function printsolution(a)
     for i = 1 , N do
         for j = 1, N do
