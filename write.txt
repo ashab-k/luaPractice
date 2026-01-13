@@ -7,4 +7,12 @@ Last but one line.
 Lua is a lightweight scripting language.
 Special characters test: !@#$%^&*()
 This line contains numbers: 12345.
-Whitespace    test    with    tabs.
+Whitespace    test    wiTrue iterators were popular in older versions of Lua, when the language did not have the for statement.
+How do they compare with generator-style iterators? Both styles have approximately the same overhead:
+one function call per iteration. On the one hand, it is easier to write the iterator with true iterators (although
+we can recover this easiness with coroutines, as we will see in the section called “Coroutines as Iterators”).
+On the other hand, the generator style is more flexible. First, it allows two or more parallel iterations.
+(For instance, consider the problem of iterating over two files comparing them word by word.) Second,
+it allows the use of break and return inside the iterator body. With a true iterator, a return returns from
+the anonymous function, not from the function doing the iteration. For these reasons, overall I usually
+prefer generators.th    tabs.
